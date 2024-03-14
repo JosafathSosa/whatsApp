@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "travelco-417014",
+  "private_key_id": "4ec34a99b67f93df1c743bc33d2351acc38776ab",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDnAZAWzRfc8xor\nVBlRF81KayIDL9SEFfQdnNbTZ0a2uh3Sv9C4wEZV1nUWD9j4ivvybkxfvsur7efQ\nKNhyPu9jr329hJv9EXp6UrS6o/nhRlikyW8Ttd/PsXSD+ZLa48Dl83Iyy/egRPRC\ny/F1O01IYOT2ZNNEw/EkFi7sdeh5LsD3/R1BsNYV9VZpC0aCJn6xGQPpI7N92iZx\nBdKgiNmKZ6qk8vrdKQ9sx7AFGsOJHeNpZupHBRjtk6B9sEjEIcTYb8iMz+huKwRU\n+38sNJUexefMIOx+qVDPz2ITl069P3Ia64rM92lt8DnYEtvixfIhLQXdcWTHFHTb\nrBWR6onNAgMBAAECggEADM1/3wZNM8V/ZkuvaYNQW+GrIr0UYfZWL2FMC1m2csBx\nkFwUJSEhj3amykBk7drEvY9ns94UVfowoPnv4QkO5cSfSzvIahKoFJPKiMDiGPOi\nobi462vm3xET3Dqel9C2lf1Tj3Am0F7x9f/Ck+o4+BwdTxs7FZ0Rxhu6obKj3eS3\n/yb5KeYAOQafHaZsOBpRHC7iemnEyLixM4j/7PCn7w5lloxkdm4KKWorN0qDse2m\nfdm11v6RJUUtBo2pjJoZrUwUOX4yVrGaoPa2WaOY3MuGarfDMEGO3xVIGJtzBAqs\nFX3HrQwS34+Kq9sF+WXNnxjfH9Wq231TWnT9N0gx2wKBgQD3eHvkYQ4kV2CS6JtB\nw2jsoYSqg/EgZS+JRGt99Zfp1A4ByaVGt9Q+jEhHlUQhzq13MO/SEKdSqLLufB7C\nwfZ8n5N+2MNMygOkIkfCYZJiE+k4Ip188bCtMDK5qWS+yaG8Xf/Abaf03p+7PxLM\nsscQl0DCh6mCjXTItcbs6VYx/wKBgQDu986KnBGuoTCKfJT1wRZcrtgeDXFQBbVq\nMD3xt1cSnvBZrLp9qh41vSzLa0Ot2ugeEYWTq2U5UV2RQ1x9o0dlcaB+pDhReqTz\nZ8MjlloVydzY8nXx9p39vFWEjzVxgRsZYBVN0glR+q/f6oiO9sfMacKp1e45SDBP\nrhmGqVlsMwKBgQCFI7or/Zd5L9VSVHirIfHCVYeloYTJ9AZmKHxYcRhBAghjJ9SW\nvnIfEKQWdxUHx0UGOjrcXn9W9lIGApseFvKAy+2zsfUozAq3dIX86zexMpsny1/F\nh9aQ5rxzrNH530r3p+7f3V8eW+O9/sojfQ+iOm3p+sjU5zvse/fBICxyiwKBgQC2\n0JuRDM62MxhoieCHld0esKAjdZM/be6YuylYdzNEypUDdZICOxf7cqsHQBs5sOOs\nxSjUjOXWkLmtPMRQVY50PBZVbBqtss7oa3QtEIQAcTrkObEjl9DMYb1muQxgti1e\nH1SNAWch8U+FVO59uKunZS2IMmKaLfDPtFhQ3dPMYwKBgFMID0JtKbxDeznJ+OJQ\nvVwmACE24jhmy8semz0RCXVQntBFY/K26eaSL+v3UeMeJp4+h8kBYPEAALnYUB4c\nqjreF6uKnlee1meLAnN37vwDl9xB+BkeAZPFPX8zT6zDPSTiG8k6SIclr2ENRFAU\nx/quZeU5Y46IKdheuuE7kjX7\n-----END PRIVATE KEY-----\n",
+  "client_email": "travelco@travelco-417014.iam.gserviceaccount.com",
+  "client_id": "115127807864698898860",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/travelco%40travelco-417014.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
