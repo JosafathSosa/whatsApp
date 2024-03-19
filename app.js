@@ -1,30 +1,16 @@
-/*
- * Copyright 2022 Google Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
 const { GoogleAuth } = require("google-auth-library");
 const jwt = require("jsonwebtoken");
+const { log } = require("console");
+const cors = require("cors");
 
 // TODO: Define Issuer ID
 const issuerId = "3388000000022329932";
 
 // TODO: Define Class ID
-const classId = `${issuerId}.desdeSim`;
+const classId = `${issuerId}.codelab_class`;
 
 const baseUrl = "https://walletobjects.googleapis.com/walletobjects/v1";
 
@@ -173,6 +159,8 @@ async function createPassObject(req, res) {
   let objectSuffix = `${req.body.email.replace(/[^\w.-]/g, "_")}`;
   let objectId = `${issuerId}.${objectSuffix}`;
 
+  //console.log(objectSuffix);
+
   let genericObject = {
     id: `${objectId}`,
     classId: classId,
@@ -186,19 +174,19 @@ async function createPassObject(req, res) {
     cardTitle: {
       defaultValue: {
         language: "en",
-        value: "TravelCO",
+        value: "Google I/O '22",
       },
     },
     subheader: {
       defaultValue: {
         language: "en",
-        value: "Salida:",
+        value: "Origen:",
       },
     },
     header: {
       defaultValue: {
         language: "en",
-        value: "Aguascalientes, Mexico",
+        value: "Aguascalientes",
       },
     },
     barcode: {
@@ -240,10 +228,13 @@ async function createPassObject(req, res) {
   });
   const saveUrl = `https://pay.google.com/gp/v/save/${token}`;
 
+  //console.log(saveUrl);
   res.send(`${saveUrl}`);
 }
 
 const app = express();
+
+app.use(cors({ origin: "http://localhost:8081" })); // Replace with your web app's origin
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -251,4 +242,7 @@ app.post("/", async (req, res) => {
   await createPassClass(req, res);
   await createPassObject(req, res);
 });
-app.listen(3000);
+
+// Your backend logic here...
+
+app.listen(3000, () => console.log("Server listening on port 3000"));

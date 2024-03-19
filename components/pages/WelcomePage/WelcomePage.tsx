@@ -10,7 +10,7 @@ const CreatePassComponent = () => {
 
   const handleSubmit = async () => {
     if (!email) {
-      return alert('Please enter your email address.');
+      return alert('Please enter your email address.'); 
     }
 
     try {
@@ -19,17 +19,17 @@ const CreatePassComponent = () => {
         body: `email=${email}`,
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       });
-
+      console.log(response);
+      
       if (!response.ok) {
         throw new Error('Error creating pass');
       }
-
       const link = await response.text();
       //console.log(link);
       
       setPass(link);
     } catch (error) {
-      console.error(error);
+      console.log(error);
       alert('An error occurred. Please try again later.');
     }
   };

@@ -5,12 +5,10 @@ export const TextLogo = () => {
   return (
     <View style={styles.root}>
       <Text style={styles.text1}>from:</Text>
-      <Text style={styles.text}>FACEBOOK</Text>
+      <Text style={styles.text}>META</Text>
     </View>
   )
 }
-
-
 
 const styles = StyleSheet.create({
     root: {
