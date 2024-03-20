@@ -17,9 +17,10 @@ const CreatePassComponent = () => {
       const response = await fetch('http://localhost:3000/', {
         method: 'POST',
         body: `email=${email}`,
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        headers: { Accept: 'application/json',
+          'Content-Type': 'application/x-www-form-urlencoded' },
       });
-      console.log(response);
+      //console.log(response);
       
       if (!response.ok) {
         throw new Error('Error creating pass');
