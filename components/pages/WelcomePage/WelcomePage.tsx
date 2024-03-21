@@ -22,7 +22,7 @@ const CreatePassComponent = () => {
   var e = "ACTIVO2";
   var prn = "654321";
   var p = "550";
-  var pn = "Erick Gabriel Perez Avila";
+  var pn = "Ramiro Josafath Sosa Jimenez";
   var osc = "AGS2";
   var on = "Aguascalientes1";
   var dsc = "GDL2";
@@ -51,6 +51,7 @@ const CreatePassComponent = () => {
       const data = await response.json();
       if ("LINK" in data) {
         console.log(data.LINK);
+        setPass(data.LINK);
       }
     } catch (error) {
       console.log(error);
